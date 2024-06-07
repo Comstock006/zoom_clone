@@ -6,8 +6,6 @@ import { useRouter } from "next/navigation";
 import { useGetCallById } from "@/hooks/useGetCallById";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
-import Image from "next/image";
-import framepng from "./frame.png";
 
 const Table = ({
   title,
@@ -63,12 +61,7 @@ const PersonalRoom = () => {
         <Table title="Topic" description={`${user?.username}'s Личная комната`} />
         <Table title="Meeting ID" description={meetingId!} />
         <Table title="Invite Link" description={meetingLink} />
-        <Image
-        src ={framepng}
-        width={500}
-        height={350}
-        alt="STRIH"
-        />
+      
       </div>
       <div className="flex gap-5">
         <Button className="bg-blue-1" onClick={startRoom}>
