@@ -42,7 +42,7 @@ onClick={handleClick}>
 {buttonIcon && (
   <Image src={buttonIcon}alt='button icon'width={13}height={13} />
 )} &nbsp;
-{buttonText || 'Schedule Meeting'}
+{buttonText || 'Будущая встреча'}
 </Button>
           </div>
         </DialogContent>
