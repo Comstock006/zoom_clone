@@ -61,7 +61,6 @@ const PersonalRoom = () => {
         <Table title="Topic" description={`${user?.username}'s Личная комната`} />
         <Table title="Meeting ID" description={meetingId!} />
         <Table title="Invite Link" description={meetingLink} />
-      
       </div>
       <div className="flex gap-5">
         <Button className="bg-blue-1" onClick={startRoom}>
